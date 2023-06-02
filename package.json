@@ -1,17 +1,17 @@
 {
-  "name": "pkg-name",
+  "name": "nuxt-server-demo",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@7.30.0",
   "description": "",
   "author": "gumingWu",
   "license": "MIT",
-  "homepage": "https://github.com/gumingWu/pkg-name#readme",
+  "homepage": "https://github.com/gumingWu/nuxt-server-demo#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gumingWu/pkg-name.git"
+    "url": "git+https://github.com/gumingWu/nuxt-server-demo.git"
   },
-  "bugs": "https://github.com/gumingWu/pkg-name/issues",
+  "bugs": "https://github.com/gumingWu/nuxt-server-demo/issues",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -38,6 +38,7 @@
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
+    "server": "node dist/index.mjs",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
@@ -65,5 +66,9 @@
   },
   "lint-staged": {
     "*": "eslint --fix"
+  },
+  "dependencies": {
+    "h3": "^1.6.6",
+    "listhen": "^1.0.4"
   }
 }
