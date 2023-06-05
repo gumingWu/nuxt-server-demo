@@ -43,7 +43,9 @@
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "h3": "node h3-demo.mjs",
+    "http": "node http-demo.mjs"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.37.0",
@@ -68,6 +70,7 @@
     "*": "eslint --fix"
   },
   "dependencies": {
+    "@nuxt/ui-templates": "^1.1.1",
     "h3": "^1.6.6",
     "listhen": "^1.0.4"
   }

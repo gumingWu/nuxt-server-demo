@@ -7,6 +7,7 @@ importers:
       '@antfu/eslint-config': ^0.37.0
       '@antfu/ni': ^0.20.0
       '@antfu/utils': ^0.7.2
+      '@nuxt/ui-templates': ^1.1.1
       '@types/node': ^18.15.5
       bumpp: ^9.0.0
       eslint: ^8.36.0
@@ -21,6 +22,7 @@ importers:
       unbuild: ^1.1.2
       vite: ^4.2.1
     dependencies:
+      '@nuxt/ui-templates': 1.1.1
       h3: 1.6.6
       listhen: 1.0.4
     devDependencies:
@@ -697,6 +699,10 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
     dev: true
+
+  /@nuxt/ui-templates/1.1.1:
+    resolution: {integrity: sha512-PjVETP7+iZXAs5Q8O4ivl4t6qjWZMZqwiTVogUXHoHGZZcw7GZW3u3tzfYfE1HbzyYJfr236IXqQ02MeR8Fz2w==}
+    dev: false
 
   /@rollup/plugin-alias/4.0.3_rollup@3.17.2:
     resolution: {integrity: sha512-ZuDWE1q4PQDhvm/zc5Prun8sBpLJy41DMptYrS6MhAy9s9kL/doN1613BWfEchGVfKxzliJ3BjbOPizXX38DbQ==}
