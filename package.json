@@ -36,8 +36,9 @@
     "dist"
   ],
   "scripts": {
+    "dev": "node nuxt-demo.mjs",
     "build": "unbuild",
-    "dev": "unbuild --stub",
+    "dev:build": "unbuild --stub",
     "server": "node dist/index.mjs",
     "lint": "eslint .",
     "prepublishOnly": "nr build",

@@ -8,21 +8,29 @@
 </head>
 <body>
   <h1>hi, im http</h1>
-  <button id="button">submit</button>
-  <button id="post">post</button>
+  <button id="get">get请求</button>
+  <button id="idget">带有id的get请求</button>
+  <button id="post">post请求</button>
 
   <script>
-    const button = document.getElementById('button')
-    button.addEventListener('click', () => {
+    const get = document.getElementById('get')
+    get.addEventListener('click', () => {
       const request = new XMLHttpRequest()
-      request.open('GET', 'http://localhost:9999/user')
+      request.open('GET', 'http://localhost:8888/user')
+      request.send()
+    })
+
+    const idget = document.getElementById('idget')
+    idget.addEventListener('click', () => {
+      const request = new XMLHttpRequest()
+      request.open('GET', 'http://localhost:8888/user/111')
       request.send()
     })
 
     const post = document.getElementById('post')
     post.addEventListener('click', () => {
       const request = new XMLHttpRequest()
-      request.open('POST', 'http://localhost:9999/post')
+      request.open('POST', 'http://localhost:8888/post')
       request.send(JSON.stringify({
         name: 'wu',
       }))
